@@ -16,7 +16,7 @@ Here is all of client project get from marketplace!
 
 ### RuneJack-Canvas-Code
 [Code](https://github.com/rootuserrafik/02-molto7-RuneJack-Canvas-Code)
-<video  width=100% height="auto" controls>
+<video  width="100%" height="auto" controls>
 <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/dqp7tsfwzovcwoa1uras" type="video/mp4">
 </video>
 
