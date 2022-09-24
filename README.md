@@ -12,7 +12,7 @@ Here is all of client project get from marketplace!
 
 ### Stroyka Theme
 [Code](https://github.com/rootuserrafik/04.-jean_dst-Tiktok-Live-Leaderboard) <br>
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF2rv4mR3AbCLdlGYTYJeQWkcKN5jIG9YZbWb3D9zYrFxqfhO-UPMGwwC6gSM1eY67j7RXG8J9rh7TmfavnCS_vTdpAH_NJoA2kH-5CrNhQWwwFnIHBBD9g0_jzKPq7eEUOeXEV1NP-PLbRJgkgy7ZtAVC8jR-xooNHADOrKMzlkADrwzrl3dYljvMRg/s16000/ezgif.com-gif-maker.gif" alt="RuneJack-Canvas-Code">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-puewPYYcr0I8DMNtOa6nhhFMdM3MZI4sID1hmkZsIfoHAnIVpTWv529GJ3oU25oqlCAZY3siiFMyDP_gAw4IC57ecU-XC2aRMMu5WMH8GuZr9iL6C6pc4DkoCZeVoUGoExGOQ2t5JkZS_PUjxtiNqlxBeQ_hjmvkatwmkMeUaJhVkQmsnFaHLnuDEw/s16000/ezgif.com-gif-maker.gif" alt="RuneJack-Canvas-Code">
 
 ### RuneJack-Canvas-Code
 [Code](https://github.com/rootuserrafik/02-molto7-RuneJack-Canvas-Code)
