@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Splooge",
+        "description": "A marketplace-based NFT project developed for secure transactions.",
+        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLd978jOSXsX4wKr5V69p4ibVNISM-Ap0rq1PvoxvmUKvlJuNFaUFyXx3kVJmjNKYnT640yBzN7cudtQ3wyUAh9Vh2jrFm5S5LZhqB4wpdJnDR2RKiG130J5a6_yNau-dfRDraCPSNzINaEuKoW3xbmc-dFhpkGeKTIfXHwjJM4DTPIejC9CMnOuCxJw/s16000/nft-splooge.png",
+        "link": "projects/project1.html"
+    },
+    {
+        "title": "Tiktok Live Leaderboard",
+        "description": "Real-time TikTok stream leaderboard with dynamic data updates.",
+        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOPU-xrMrcj2_S3I74W0EAsRIJDQ4i4-Pp_GTR4QKkhPWtqav8iHZAkzS_WMJya4Sse13l56cqrXjvhqRzpZSITtiKy8E-TuqYD8Wi_D9AMsmFTvi9MhsCEF_-JhBk4bCM0qc_0mwYN2CIGdv_tUidmEORpICXZ2KOUdNUUatikFwiCQf8TUpsXg5Ltw/s16000/scrinshort.png",
+        "link": "projects/project2.html"
+    }
+]
