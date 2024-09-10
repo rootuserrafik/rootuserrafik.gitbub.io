@@ -1,0 +1,106 @@
+.contact-section {
+    background: linear-gradient(135deg, #8C84EF, #2BD5BB);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2BD5BB;
+    box-shadow: 0 0 10px rgba(43, 213, 187, 0.5);
+}
+
+.button--primary {
+    padding: 15px 30px;
+    background-color: #2BD5BB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button--primary:hover {
+    background-color: #8C84EF;
+}
+
+/* Popup Message Styling */
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: #4CAF50; /* Success color */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Error color for popup */
+.popup-message.error {
+    background-color: #F44336;
+}
+
+/* Show the popup */
+.popup-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide the popup */
+.popup-message.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.popup-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-message.error {
+    background-color: #F44336;
+}
+
