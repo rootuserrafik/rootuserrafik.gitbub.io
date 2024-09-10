@@ -105,15 +105,29 @@ body {
     color: #007bff;
 }
 
+
+/* Hero Section Styles */
+.hero-bg {
+    background: url('path/to/your-hero-image.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the hero section */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Text color on top of the hero background */
+}
+
 /* Hero Section Styles */
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('../images/hero-bg-1.jpg') no-repeat center center/cover;
     position: relative;
-    margin-top: 80px;
+    margin-top: 66px;
 }
 
 .hero__content {
