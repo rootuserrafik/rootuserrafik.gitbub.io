@@ -46,10 +46,102 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="projects__heading">Client Projects</h2>
-        <div id="projects-container" class="projects__grid"></div>
-    </section>
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 class="projects__heading">Client Projects</h2>
+    
+    <div class="projects__container">
+        <!-- 70% Main Project Area -->
+         <!-- Full Projects Slider -->
+<div class="projects__slider-container">
+    
+    <div class="projects__main-slider">
+        <!-- First Slide -->
+        <div class="projects__main slide active">
+            <div class="project__info">
+                <div class="projects__main-left">
+                    <div class="projects__slider">
+                        <img src="https://placehold.co/600x400" alt="Project 1 Image">
+                    </div>
+                </div>
+                <div class="projects__main-right">
+                    <h3 class="projects__title">Project 1 Title</h3>
+                    <p class="projects__description">This is the detailed description for Project 1. It includes technologies used and the purpose.</p>
+                    <div class="projects__tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Projects Details and Slider Links -->
+            <div class="projects__details">
+                <a href="#" class="slider__prev" onclick="prevSlide()">&#60;</a>
+                <span class="project__meta">
+                    <strong>Cost:</strong> $5000 | 
+                    <strong>Duration:</strong> 3 months | 
+                    <strong>Industry:</strong> E-commerce
+                </span>
+                <a href="#" class="slider__next" onclick="nextSlide()">&#62;</a>
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="projects__main slide">
+            <div class="project__info">
+                <div class="projects__main-left">
+                    <div class="projects__slider">
+                        <img src="https://placehold.co/600x400" alt="Project 2 Image">
+                    </div>
+                </div>
+                <div class="projects__main-right">
+                    <h3 class="projects__title">Project 2 Title</h3>
+                    <p class="projects__description">This is the detailed description for Project 2. It includes technologies used and the purpose.</p>
+                    <div class="projects__tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Projects Details and Slider Links -->
+            <div class="projects__details">
+                <a href="#" class="slider__prev" onclick="prevSlide()">&#60;</a>
+                <span class="project__meta">
+                    <strong>Cost:</strong> $8000 | 
+                    <strong>Duration:</strong> 4 months | 
+                    <strong>Industry:</strong> Healthcare
+                </span>
+                <a href="#" class="slider__next" onclick="nextSlide()">&#62;</a>
+            </div>
+        </div>
+        
+        <!-- Additional slides can be added similarly -->
+    </div>
+
+</div>
+
+
+
+
+        <!-- 30% Other Projects Area -->
+        <div class="projects__others">
+            <!-- Other Projects (1:1 boxes) -->
+            <div class="projects__other-item">
+                <img src="https://placehold.co/400x400" alt="Other Project Image">
+            </div>
+            <div class="projects__other-item">
+                <img src="https://placehold.co/400x400" alt="Other Project Image">
+            </div>
+            <!-- Project Count Box -->
+            <div class="projects__count">
+                <p>10+ Projects Completed</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -66,5 +158,32 @@
     <!-- JavaScript Files -->
     <script src="assets/js/smooth-scroll.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+       let currentSlide = 0;
+const projectSlides = document.querySelectorAll('.projects__main');
+
+function showSlide(index) {
+    projectSlides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % projectSlides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + projectSlides.length) % projectSlides.length;
+    showSlide(currentSlide);
+}
+
+// Initialize the first slide as active
+showSlide(currentSlide);
+
+    </script>
 </body>
 </html>
