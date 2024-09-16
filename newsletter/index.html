@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to our newsletter for updates on tools, tutorials, and exclusive content.">
+    <meta name="keywords" content="newsletter, subscription, updates, tutorials, premium content, tools">
+    <meta name="author" content="Md. Rafikul Islam">
+    <title>Newsletter Subscription</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/newsletter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header-container"></div>
+
+    <!-- newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter__content">
+            <h1 class="newsletter__title">Stay Updated!</h1>
+            <p class="newsletter__subtitle">Subscribe to our newsletter for the latest tools, tutorials, and exclusive content.</p>
+        </div>
+    </section>
+
+    <!-- Subscription Form Section -->
+    <section class="subscribe">
+        <div class="subscribe__container">
+            <h2 class="subscribe__heading">Join the Community</h2>
+            <p class="subscribe__text">Get monthly updates delivered directly to your inbox.</p>
+            
+            <form class="subscribe__form" action="#" method="POST">
+                <input type="email" class="subscribe__input" placeholder="Enter your email" required>
+                <button type="submit" class="button button--primary">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefits__container">
+            <h2 class="benefits__heading">Why Subscribe?</h2>
+            <div class="benefits__grid">
+                <div class="benefit__item">
+                    <img src="https://placehold.co/68x68" alt="Tools Icon" class="benefit__icon">
+                    <h3>Exclusive Tools</h3>
+                    <p>Access premium tools and open-source projects created by our team before they are released to the public.</p>
+                </div>
+                <div class="benefit__item">
+                    <img src="https://placehold.co/68x68" alt="Tutorials Icon" class="benefit__icon">
+                    <h3>Expert Tutorials</h3>
+                    <p>Learn from in-depth tutorials and coding tips to enhance your skills in web and app development.</p>
+                </div>
+                <div class="benefit__item">
+                    <img src="https://placehold.co/68x68" alt="Exclusive Content Icon" class="benefit__icon">
+                    <h3>Premium Content</h3>
+                    <p>Receive exclusive content such as ebooks, guides, and development resources straight to your inbox.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials__container">
+            <h2 class="testimonials__heading">What Our Subscribers Say</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial__item">
+                    <p>"The tools and resources I get through this newsletter are top-notch. They’ve helped me improve my projects significantly!"</p>
+                    <span class="testimonial__author">— Alex S., Developer</span>
+                </div>
+                <div class="testimonial__item">
+                    <p>"I always look forward to the tutorials. They are well-explained and have helped me become a more efficient developer."</p>
+                    <span class="testimonial__author">— Linda M., Software Engineer</span>
+                </div>
+                <div class="testimonial__item">
+                    <p>"The premium content is fantastic! I especially love the ebooks and coding guides."</p>
+                    <span class="testimonial__author">— Michael T., Web Developer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p>&copy; 2024 Md. Rafikul Islam | All Rights Reserved.</p>
+            <ul class="footer__social">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        // Load the header.html dynamically
+        fetch('../common/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
