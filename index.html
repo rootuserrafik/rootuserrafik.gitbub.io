@@ -3,38 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Md. Rafikul Islam - Full-Stack Developer showcasing client projects and demos.">
-    <meta name="keywords" content="Md. Rafikul Islam, portfolio, developer, projects, client work, full-stack development">
     <meta name="author" content="Md. Rafikul Islam">
-    <title>Md. Rafikul Islam | Portfolio</title>
-
-    <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/glassmorphism.css">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Home | Md. Rafikul Islam</title>
+    <meta name="description" content="Welcome to the home page of Md. Rafikul Islam's portfolio.">
+    <meta name="keywords" content="portfolio, full-stack developer, home, projects">
 </head>
+
 <body>
 
     <!-- Header Section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <!-- <h1 class="navbar__title">Md. Rafikul Islam</h1> -->
-                <img class="main_logo" src="assets/images/logo.png" alt="Md. Rafikul Islam">
-            </div>
-            <ul class="navbar__links">
-                <li class="navbar__item"><a href="#home" class="navbar__link">Home</a></li>
-                <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
-                <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
-                <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-container"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -143,21 +126,27 @@
 
 
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer__content">
-            <p class="footer__text">&copy; 2024 Md. Rafikul Islam | All Rights Reserved.</p>
-            <ul class="footer__social">
-                <li class="footer__social-item"><a href="#">LinkedIn</a></li>
-                <li class="footer__social-item"><a href="#">GitHub</a></li>
-                <li class="footer__social-item"><a href="#">Twitter</a></li>
-            </ul>
-        </div>
-    </footer>
+<div id="footer-container"></div>
 
     <!-- JavaScript Files -->
     <script src="assets/js/smooth-scroll.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Load the header.html dynamically for nav
+        fetch('common/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+    <script>
+        // Load the footer.html dynamically
+        fetch('common/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
     <script>
        let currentSlide = 0;
 const projectSlides = document.querySelectorAll('.projects__main');
