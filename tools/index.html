@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a variety of open-source and premium tools developed by Md. Rafikul Islam. Improve your workflow with powerful solutions for developers and businesses.">
+    <meta name="keywords" content="open-source tools, premium tools, developer tools, Md. Rafikul Islam">
+    <meta name="author" content="Md. Rafikul Islam">
+    <title>Open-Source & Premium Tools | Md. Rafikul Islam</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/tools.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header-container"></div>
+
+    <!-- tools-Hero Section -->
+    <section class="tools-hero">
+        <div class="tools-hero__content">
+            <h1 class="tools-hero__title">Discover My Tools</h1>
+            <p class="tools-hero__subtitle">Empower your workflow with open-source and premium tools crafted for developers and businesses.</p>
+            <a href="#tools-section" class="button button--primary">Explore Tools</a>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools-section" class="tools-section">
+        <h2 class="section__heading">My Tools</h2>
+
+        <!-- Filter Options -->
+        <div class="filter__container">
+            <button class="filter__button active" onclick="filterTools('all')">All</button>
+            <button class="filter__button" onclick="filterTools('open-source')">Open-Source</button>
+            <button class="filter__button" onclick="filterTools('premium')">Premium</button>
+        </div>
+
+        <!-- Tools Container -->
+        <div class="tools__container">
+            
+            <!-- Tool 1 (Open-Source) -->
+            <div class="tool__card" data-type="open-source">
+                <img src="https://placehold.co/600x400" alt="Open-Source Tool 1" class="tool__image">
+                <h3 class="tool__title">Open-Source Tool 1</h3>
+                <p class="tool__description">A powerful, free tool to enhance your development process. Perfect for automation and scaling your projects.</p>
+                <div class="tool__tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Open-Source</span>
+                </div>
+                <a href="https://github.com/rafikul-open-source-tool" class="button button--secondary">Use on GitHub</a>
+            </div>
+
+            <!-- Tool 2 (Premium) -->
+            <div class="tool__card" data-type="premium">
+                <img src="https://placehold.co/600x400" alt="Premium Tool 2" class="tool__image">
+                <h3 class="tool__title">Premium Tool 2</h3>
+                <p class="tool__description">An advanced tool designed to streamline workflows for enterprises and professional developers. Packed with premium features.</p>
+                <div class="tool__tags">
+                    <span class="tag">API Integration</span>
+                    <span class="tag">Premium</span>
+                    <span class="tag">Business</span>
+                </div>
+                <a href="https://buy-premium-tool.com" class="button button--primary">Purchase Tool</a>
+            </div>
+
+            <!-- Tool 3 (Open-Source) -->
+            <div class="tool__card" data-type="open-source">
+                <img src="https://placehold.co/600x400" alt="Open-Source Tool 3" class="tool__image">
+                <h3 class="tool__title">Open-Source Tool 3</h3>
+                <p class="tool__description">A community-driven project offering various utilities for managing databases and backend systems.</p>
+                <div class="tool__tags">
+                    <span class="tag">Database</span>
+                    <span class="tag">Backend</span>
+                    <span class="tag">Open-Source</span>
+                </div>
+                <a href="https://github.com/rafikul-open-source-tool-3" class="button button--secondary">Use on GitHub</a>
+            </div>
+
+            <!-- Tool 4 (Premium) -->
+            <div class="tool__card" data-type="premium">
+                <img src="https://placehold.co/600x400" alt="Premium Tool 4" class="tool__image">
+                <h3 class="tool__title">Premium Tool 4</h3>
+                <p class="tool__description">A high-performance tool for optimizing your web applications, delivering faster load times and improved user experience.</p>
+                <div class="tool__tags">
+                    <span class="tag">Optimization</span>
+                    <span class="tag">Premium</span>
+                    <span class="tag">Performance</span>
+                </div>
+                <a href="https://buy-premium-tool-4.com" class="button button--primary">Purchase Tool</a>
+            </div>
+
+            <!-- More tools can be added here -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__text">&copy; 2024 Md. Rafikul Islam | All Rights Reserved.</p>
+            <ul class="footer__social">
+                <li class="footer__social-item"><a href="#">LinkedIn</a></li>
+                <li class="footer__social-item"><a href="#">GitHub</a></li>
+                <li class="footer__social-item"><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script>
+        // Load the header.html dynamically
+        fetch('../common/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+    <script>
+        function filterTools(type) {
+            const tools = document.querySelectorAll('.tool__card');
+            tools.forEach(tool => {
+                if (type === 'all' || tool.getAttribute('data-type') === type) {
+                    tool.style.display = 'block';
+                } else {
+                    tool.style.display = 'none';
+                }
+            });
+
+            document.querySelectorAll('.filter__button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`[onclick="filterTools('${type}')"]`).classList.add('active');
+        }
+
+        // Initialize with 'all' tools visible
+        filterTools('all');
+    </script>
+</body>
+</html>
