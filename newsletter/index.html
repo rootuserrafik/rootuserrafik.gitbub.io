@@ -94,14 +94,22 @@
                 <li><a href="#">Twitter</a></li>
             </ul>
         </div>
-    </footer>
-    <script>
+    </footer><script>
         // Load the header.html dynamically
         fetch('../common/header.html')
             .then(response => response.text())
             .then(data => {
+                // Insert the loaded header HTML into the container
                 document.getElementById('header-container').innerHTML = data;
-            });
+    
+                // Now that the header is loaded, set the active tab
+                document.querySelectorAll('.navbar__link').forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add('active');
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading header:', error));
     </script>
 
 </body>

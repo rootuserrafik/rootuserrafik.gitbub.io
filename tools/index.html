@@ -113,14 +113,24 @@
     </footer>
 
     <!-- JavaScript Files -->
-    <script>
-        // Load the header.html dynamically
-        fetch('../common/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
+     <script>
+    // Load the header.html dynamically
+    fetch('../common/header.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insert the loaded header HTML into the container
+            document.getElementById('header-container').innerHTML = data;
+
+            // Now that the header is loaded, set the active tab
+            document.querySelectorAll('.navbar__link').forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
             });
-    </script>
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
+
     <script>
         function filterTools(type) {
             const tools = document.querySelectorAll('.tool__card');
